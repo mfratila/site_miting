@@ -2,85 +2,91 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     text-align: center;
     color: white;
+    background: linear-gradient(to bottom, #0048b5, #ffd700);
 }
 .hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh; 
+    height: 50vh;
     background: url('miting_piata_victoriei.jpg') no-repeat center top/cover;
 }
 .hero-content {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     max-width: 90%;
-    width: 400px;
+    width: 450px;
 }
 h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    color: #ffd700;
 }
 p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 15px 0;
 }
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
-    background: #007bff;
+    background: #0048b5;
+    border: none;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 0.3s;
 }
 .cta-button:hover {
-    background: #0056b3;
+    background: #003388;
 }
-.details-section {
+.details-section, .why-section, .map-section, .faq-section {
     padding: 50px;
-    background: rgba(0, 0, 0, 0.6); /* Culoare semi-transparentă */
-    color: white;
+    background: rgba(255, 215, 0, 0.8);
+    color: #0048b5;
     text-align: left;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 80%;
 }
-.details-section h2 {
+.details-section h2, .why-section h2, .map-section h2, .faq-section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
 }
-.details-section p {
-    font-size: 1.2rem;
+.map-container {
+    width: 60%;
+    height: 300px;
+    background-color: gray;
+    border-radius: 10px;
+    margin: 0 auto;
 }
 @media (max-width: 600px) {
     .hero {
-        height: 50vh; /* Ajustat pentru ecrane mici */
+        height: 50vh;
         padding: 20px;
+        background-position: center top;
     }
     .hero-content {
         width: 100%;
         padding: 15px;
     }
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     p {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .cta-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-    .details-section {
-        padding: 30px;
-    }
-    .details-section h2 {
-        font-size: 1.5rem;
-    }
-    .details-section p {
         font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .map-container {
+        width: 100%;
     }
 }
