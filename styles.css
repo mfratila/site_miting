@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    text-align: center;
+    color: white;
+}
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; 
+    background: url('miting_piata_victoriei.jpg') no-repeat center top/cover;
+}
+.hero-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 400px;
+}
+h1 {
+    font-size: 2rem;
+}
+p {
+    font-size: 1rem;
+    margin: 15px 0;
+}
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.cta-button:hover {
+    background: #0056b3;
+}
+.details-section {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.6); /* Culoare semi-transparentă */
+    color: white;
+    text-align: left;
+}
+.details-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.details-section p {
+    font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+    .hero {
+        height: 50vh; /* Ajustat pentru ecrane mici */
+        padding: 20px;
+    }
+    .hero-content {
+        width: 100%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+    .cta-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    .details-section {
+        padding: 30px;
+    }
+    .details-section h2 {
+        font-size: 1.5rem;
+    }
+    .details-section p {
+        font-size: 1rem;
+    }
+}
