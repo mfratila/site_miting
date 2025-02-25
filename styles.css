@@ -126,7 +126,7 @@ p {
     background: #003388;
 }
 
-.context-section {
+.context-section, .about-section {
     padding: 50px;
     background: rgba(255, 215, 0, 0.8); 
     color: #00247D; 
@@ -137,14 +137,14 @@ p {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.context-section h2 {
+.context-section h2, .about-section h2 {
     font-size: 2rem;
     margin-bottom: 25px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.context-section p {
+.context-section p, .about-section p {
     text-indent: 30px;
     font-size: 1.2rem;
     line-height: 1.6;
@@ -152,16 +152,16 @@ p {
     text-align: justify;
 }
 
-#context ul {
+#context ul, .about-section ul {
     list-style: none; 
     padding-left: 0;
 }
 
-#context ul li {
+#context ul li, .about-section ul li {
     position: relative; 
 }
 
-#context ul li::before {
+#context ul li::before, .about-section ul li::before {
     content: "➜"; 
     position: absolute;
     left: 0;
@@ -171,6 +171,7 @@ p {
 
 
 .map-section h2 {
+    text-transform: uppercase;
     text-align: center;
     padding-bottom: 20px;
 }
@@ -211,6 +212,7 @@ p {
 }
 
 .faq-section h2 {
+    text-transform: uppercase;
     text-align: center;
     padding-bottom: 20px;
 }
